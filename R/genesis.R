@@ -68,7 +68,7 @@ genesis <- function(summarydata, filter=FALSE,
     tolerance_sigsq2=1e-8;
     tolerance_a=1e-9;
     tolerance_llk=1e-6;
-    maxEM=3e3;
+    maxEM=100;
     steps=2;
   }
   
