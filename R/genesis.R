@@ -173,6 +173,7 @@ genesis <- function(summarydata, filter=FALSE,
     
     time0 <- proc.time()[3]
     fit <- EM_func(starting, betahat,varbetahat,ldscore,Nstar,M, c0, tolerance_pic, tolerance_sigsq1,tolerance_a,tolerance_llk,maxEM,steps,cores,print,printfreq,stratification)
+    print(fit[3])
     est <- fit[3:5]; c0 = fit[7]
     runhour <- (proc.time()[3] - time0)/3600
     
